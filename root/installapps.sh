@@ -28,8 +28,8 @@ if jq ".defaultapps | contains([5])" "$json_file" | grep -q true; then
 fi
 
 if jq ".programming | contains([0])" "$json_file" | grep -q true; then
-    chmod +x /installable-apps/openjdk-8-jre.sh
-    /installable-apps/openjdk-8-jre.sh
+    chmod +x /installable-apps/openjdk-21-jre.sh
+    /installable-apps/openjdk-21-jre.sh
 fi
 if jq ".programming | contains([1])" "$json_file" | grep -q true; then
     chmod +x /installable-apps/openjdk-17-jre.sh
